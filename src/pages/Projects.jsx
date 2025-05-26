@@ -35,7 +35,7 @@ const Projects = () => {
     {
       name: 'Monty Hall Simulator',
       description: 'An interactive simulation of the famous Monty Hall probability puzzle, demonstrating the counterintuitive nature of probability.',
-      link: '#', // To be updated later
+      link: 'https://montyhallsimulator.streamlit.app', // To be updated later
       icon: <CasinoIcon />,
       technologies: ['Python', 'Streamlit', 'Statistics'],
     },
