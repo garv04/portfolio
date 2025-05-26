@@ -1,5 +1,6 @@
-import { Container, Typography, Box, Grid, Paper, Chip, Divider } from '@mui/material';
+import { Container, Typography, Box, Grid, Paper, Chip, Divider, Button } from '@mui/material';
 import { motion } from 'framer-motion';
+import LanguageIcon from '@mui/icons-material/Language';
 
 const About = () => {
   const skills = {
@@ -274,21 +275,37 @@ const About = () => {
                         '&:hover': {
                           transform: 'translateY(-5px)',
                         },
-                        cursor: cert.url ? 'pointer' : 'default',
                       }}
-                      onClick={() => cert.url && window.open(cert.url, '_blank')}
                     >
                       <Typography
                         variant="body1"
                         sx={{ 
                           color: 'rgba(255, 255, 255, 0.8)',
-                          '&:hover': {
-                            color: cert.url ? '#fff' : 'rgba(255, 255, 255, 0.8)',
-                          }
+                          mb: cert.url ? 2 : 0
                         }}
                       >
                         {cert.name}
                       </Typography>
+                      {cert.url && (
+                        <Button
+                          size="small"
+                          startIcon={<LanguageIcon />}
+                          href={cert.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          sx={{
+                            color: '#fff',
+                            borderColor: 'rgba(255, 255, 255, 0.5)',
+                            '&:hover': {
+                              borderColor: '#fff',
+                              backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                            },
+                          }}
+                          variant="outlined"
+                        >
+                          View Certificate
+                        </Button>
+                      )}
                     </Paper>
                   </motion.div>
                 </Grid>
