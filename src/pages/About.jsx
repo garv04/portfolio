@@ -42,11 +42,11 @@ const About = () => {
     },
     {
       name: 'ISRO (IIRS,DEHRADUN): Geo-Data Sharing and Cyber Security',
-      url: null
+      url: '/certificate_iirsisro_cyber.pdf'
     },
     {
       name: 'ISRO (IIRS,DEHRADUN): Geo-Data Processing Using Python and Machine Learning',
-      url: null
+      url: '/certificate_iirsisro_python.pdf'
     },
   ];
 
