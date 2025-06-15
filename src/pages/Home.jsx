@@ -5,7 +5,7 @@ import DownloadIcon from '@mui/icons-material/Download';
 
 const Home = () => {
   const stats = [
-    { label: 'CGPA', value: '9.52'},
+    { label: 'CGPA', value: '9.6'},
     { label: 'Smart India Hackathon 2024', value: 'Grand Finalist'},
   ];
 
